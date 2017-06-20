@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Chart Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body>
+    <header><h1>Архив метеослужбы</h1></header>
+    <div class="content">
+      <div class="buttons">
+        <button data-type="temperature">Температура</button>
+        <div class="clear"></div>
+        <button data-type="precipitation">Осадки</button>
+      </div>
+      <div class="graff">
+        <select name="from">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </select>
+        <select name="to">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </select>
+        <div class="clear"></div>
+        <div class="chartWrap">
+          <canvas id="canvas" width="350" height="240"></canvas>
+        </div>  
+      </div>    
+    </div>
+  </body>
+</html>
